@@ -23,8 +23,8 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-950">
-      <section className="bg-gradient-to-br from-slate-900 to-slate-800 py-20">
+    <div className="min-h-screen bg-ww3d-surface">
+      <section className="ww3d-gradient py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
@@ -48,8 +48,8 @@ export default function Contact() {
 
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-blue-600/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Icons.Building2 className="w-6 h-6 text-blue-400" />
+                  <div className="w-12 h-12 icon-ww3d-bg rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Icons.Building2 className="w-6 h-6 text-ww3d" />
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-white mb-2">For Business Inquiries</h3>
@@ -60,8 +60,8 @@ export default function Contact() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-blue-600/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Icons.Wrench className="w-6 h-6 text-blue-400" />
+                  <div className="w-12 h-12 icon-ww3d-bg rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Icons.Wrench className="w-6 h-6 text-ww3d" />
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-white mb-2">Technical Support</h3>
@@ -72,8 +72,8 @@ export default function Contact() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-blue-600/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Icons.Users className="w-6 h-6 text-blue-400" />
+                  <div className="w-12 h-12 icon-ww3d-bg rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Icons.Users className="w-6 h-6 text-ww3d" />
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-white mb-2">Consulting Services</h3>
@@ -84,30 +84,30 @@ export default function Contact() {
                 </div>
               </div>
 
-              <div className="mt-12 bg-slate-900 border border-slate-800 rounded-lg p-6">
+              <div className="mt-12 card-ww3d border border-ww3d-30 rounded-lg p-6">
                 <h3 className="text-lg font-semibold text-white mb-4">Who We Work With</h3>
                 <ul className="space-y-2">
                   <li className="flex items-center gap-3 text-gray-300">
-                    <Icons.Check className="w-5 h-5 text-blue-400 flex-shrink-0" />
+                    <Icons.Check className="w-5 h-5 text-ww3d flex-shrink-0" />
                     Defense contractors and prime integrators
                   </li>
                   <li className="flex items-center gap-3 text-gray-300">
-                    <Icons.Check className="w-5 h-5 text-blue-400 flex-shrink-0" />
+                    <Icons.Check className="w-5 h-5 text-ww3d flex-shrink-0" />
                     Aerospace manufacturers and training providers
                   </li>
                   <li className="flex items-center gap-3 text-gray-300">
-                    <Icons.Check className="w-5 h-5 text-blue-400 flex-shrink-0" />
+                    <Icons.Check className="w-5 h-5 text-ww3d flex-shrink-0" />
                     Government agencies and research laboratories
                   </li>
                   <li className="flex items-center gap-3 text-gray-300">
-                    <Icons.Check className="w-5 h-5 text-blue-400 flex-shrink-0" />
+                    <Icons.Check className="w-5 h-5 text-ww3d flex-shrink-0" />
                     Military training centers and facilities
                   </li>
                 </ul>
               </div>
             </div>
 
-            <div className="bg-slate-900 border border-slate-800 rounded-lg p-8">
+            <div className="card-ww3d border border-ww3d-30 rounded-lg p-8">
               <h2 className="text-2xl font-bold text-white mb-6">Send us a Message</h2>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
@@ -121,7 +121,7 @@ export default function Contact() {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded focus:outline-none focus:border-blue-500 text-white"
+                    className="w-full px-4 py-3 bg-ww3d-input border border-ww3d-30 rounded focus:outline-none focus-border-ww3d text-white"
                   />
                 </div>
 
@@ -136,7 +136,7 @@ export default function Contact() {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded focus:outline-none focus:border-blue-500 text-white"
+                    className="w-full px-4 py-3 bg-ww3d-input border border-ww3d-30 rounded focus:outline-none focus-border-ww3d text-white"
                   />
                 </div>
 
@@ -151,7 +151,7 @@ export default function Contact() {
                     required
                     value={formData.company}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded focus:outline-none focus:border-blue-500 text-white"
+                    className="w-full px-4 py-3 bg-ww3d-input border border-ww3d-30 rounded focus:outline-none focus-border-ww3d text-white"
                   />
                 </div>
 
@@ -166,13 +166,13 @@ export default function Contact() {
                     rows={6}
                     value={formData.message}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded focus:outline-none focus:border-blue-500 text-white resize-none"
+                    className="w-full px-4 py-3 bg-ww3d-input border border-ww3d-30 rounded focus:outline-none focus-border-ww3d text-white resize-none"
                   ></textarea>
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full px-6 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded transition-colors"
+                  className="w-full px-6 py-4 btn-ww3d text-white font-semibold rounded transition-colors"
                 >
                   Submit
                 </button>

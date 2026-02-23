@@ -11,7 +11,7 @@ export default function Footer({ onNavigate }: FooterProps) {
   };
 
   return (
-    <footer className="bg-slate-950 border-t border-slate-800">
+    <footer className="bg-ww3d-surface border-t border-ww3d-30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1">
@@ -31,7 +31,7 @@ export default function Footer({ onNavigate }: FooterProps) {
               <li>
                 <button
                   onClick={() => handleNavClick('home')}
-                  className="text-gray-400 hover:text-blue-400 transition-colors text-sm"
+                  className="text-gray-400 hover-ww3d-light transition-colors text-sm"
                 >
                   Home
                 </button>
@@ -39,23 +39,16 @@ export default function Footer({ onNavigate }: FooterProps) {
               <li>
                 <button
                   onClick={() => handleNavClick('products')}
-                  className="text-gray-400 hover:text-blue-400 transition-colors text-sm"
+                  className="text-gray-400 hover-ww3d-light transition-colors text-sm"
                 >
                   Products
                 </button>
               </li>
-              <li>
-                <button
-                  onClick={() => handleNavClick('industries')}
-                  className="text-gray-400 hover:text-blue-400 transition-colors text-sm"
-                >
-                  Industries
-                </button>
-              </li>
+              
               <li>
                 <button
                   onClick={() => handleNavClick('about')}
-                  className="text-gray-400 hover:text-blue-400 transition-colors text-sm"
+                  className="text-gray-400 hover-ww3d-light transition-colors text-sm"
                 >
                   About
                 </button>
@@ -77,7 +70,7 @@ export default function Footer({ onNavigate }: FooterProps) {
             <h3 className="text-white font-semibold mb-4">Contact</h3>
             <button
               onClick={() => handleNavClick('contact')}
-              className="text-blue-400 hover:text-blue-300 transition-colors text-sm font-medium"
+              className="text-ww3d hover-ww3d-light transition-colors text-sm font-medium"
             >
               Get in Touch
             </button>

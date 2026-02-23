@@ -12,7 +12,6 @@ export default function Header({ currentPage, onNavigate }: HeaderProps) {
   const navigation = [
     { name: 'Home', href: 'home' },
     { name: 'Products', href: 'products' },
-    { name: 'Industries', href: 'industries' },
     { name: 'About', href: 'about' },
     { name: 'Contact', href: 'contact' },
   ];
@@ -24,7 +23,7 @@ export default function Header({ currentPage, onNavigate }: HeaderProps) {
   };
 
   return (
-    <header className="bg-slate-900/95 backdrop-blur-sm border-b border-slate-800 sticky top-0 z-50">
+    <header className="header-ww3d border-b border-ww3d-30 sticky top-0 z-50">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <div
@@ -46,7 +45,7 @@ export default function Header({ currentPage, onNavigate }: HeaderProps) {
                   onClick={() => handleNavClick(item.href)}
                   className={`px-3 py-2 text-sm font-medium transition-colors ${
                     currentPage === item.href
-                      ? 'text-blue-400 border-b-2 border-blue-400'
+                      ? 'text-ww3d border-b-2 border-ww3d'
                       : 'text-gray-300 hover:text-white hover:border-b-2 hover:border-gray-500'
                   }`}
                 >
@@ -72,7 +71,7 @@ export default function Header({ currentPage, onNavigate }: HeaderProps) {
       </nav>
 
       {mobileMenuOpen && (
-        <div className="md:hidden bg-slate-900 border-t border-slate-800">
+        <div className="md:hidden mobile-menu-ww3d border-t border-ww3d-30">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navigation.map((item) => (
               <button
@@ -80,8 +79,8 @@ export default function Header({ currentPage, onNavigate }: HeaderProps) {
                 onClick={() => handleNavClick(item.href)}
                 className={`block w-full text-left px-3 py-2 text-base font-medium ${
                   currentPage === item.href
-                    ? 'text-blue-400 bg-slate-800'
-                    : 'text-gray-300 hover:text-white hover:bg-slate-800'
+                    ? 'text-ww3d bg-ww3d-dark'
+                    : 'text-gray-300 hover:text-white hover:bg-ww3d-dark'
                 }`}
               >
                 {item.name}

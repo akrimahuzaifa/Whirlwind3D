@@ -1,3 +1,153 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --ww3d-green: 58, 88, 66;
+  --ww3d-green-dark: 46, 72, 55;
+  --ww3d-green-light: 100, 140, 120;
+}
+
+/* Whirlwind3D custom accent utilities */
+.ww3d-gradient {
+  background: linear-gradient(
+    135deg,
+    rgb(var(--ww3d-green)),
+    rgb(var(--ww3d-green-dark))
+  );
+}
+.text-ww3d {
+  color: rgb(var(--ww3d-green));
+}
+.border-ww3d {
+  border-color: rgb(var(--ww3d-green));
+}
+.bg-ww3d {
+  background-color: rgb(var(--ww3d-green));
+  color: white;
+}
+.bg-ww3d-dark {
+  background-color: rgb(var(--ww3d-green-dark));
+  color: white;
+}
+.btn-ww3d {
+  background: linear-gradient(90deg, rgb(var(--ww3d-green)) 0%, rgb(var(--ww3d-green-dark)) 100%);
+  color: white;
+  box-shadow: 0 6px 18px rgba(var(--ww3d-green-dark), 0.18);
+}
+.btn-ww3d:hover {
+  filter: brightness(0.92);
+}
+.icon-ww3d-bg {
+  background-color: rgba(var(--ww3d-green), 0.1);
+}
+.group-hover-ww3d-bg {
+  transition: background-color 0.2s;
+}
+.group:hover .group-hover-ww3d-bg {
+  background-color: rgba(var(--ww3d-green), 0.2);
+}
+.group:hover .group-hover-ww3d {
+  color: rgb(var(--ww3d-green));
+}
+.hover-border-ww3d:hover {
+  border-color: rgb(var(--ww3d-green));
+}
+.hover-ww3d-light:hover {
+  color: rgb(var(--ww3d-green-light));
+}
+
+/* light text utility for hero accents */
+.text-ww3d-light { color: rgb(var(--ww3d-green-light)); }
+
+/* make CTA text-style buttons subtle */
+.cta-text {
+  background: transparent;
+  border: none;
+  padding: 0;
+  font-weight: 700;
+}
+
+/* Pill buttons for hero CTAs */
+.btn-pill-ww3d {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.9rem 1.6rem;
+  border-radius: 9999px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform .12s ease, box-shadow .12s ease, filter .12s ease;
+  border: 1px solid rgba(var(--ww3d-green-dark), 0.3);
+  box-shadow: 0 12px 30px rgba(var(--ww3d-green-dark), 0.12);
+}
+.btn-pill-ww3d:active { transform: translateY(1px); }
+
+/* Primary pill uses the existing btn gradient */
+.btn-pill-ww3d.btn-ww3d { padding-left: 1.5rem; padding-right: 1.5rem; }
+.btn-pill-ww3d.btn-ww3d { color: white; }
+.btn-pill-ww3d.btn-ww3d:hover { filter: brightness(0.96); box-shadow: 0 18px 38px rgba(var(--ww3d-green-dark), 0.14); }
+
+/* Secondary pill matches the second section surface */
+.btn-pill-ww3d-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.9rem 1.6rem;
+  border-radius: 9999px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform .12s ease, box-shadow .12s ease, filter .12s ease;
+  background-color: rgb(12,22,18); /* same as card-section-ww3d */
+  color: #e6efe9;
+  border: 1px solid rgba(var(--ww3d-green), 0.14);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+}
+.btn-pill-ww3d-secondary:hover { filter: brightness(1.08); box-shadow: 0 18px 38px rgba(0,0,0,0.5); }
+
+/* Small responsive tweak */
+@media (max-width: 640px) {
+  .btn-pill-ww3d, .btn-pill-ww3d-secondary { width: 100%; padding-left: 1rem; padding-right: 1rem; }
+}
+.hover-shadow-ww3d:hover {
+  box-shadow: 0 10px 15px -3px rgba(var(--ww3d-green-dark), 0.15);
+}
+.icon-ww3d-bg-20 {
+  background-color: rgba(var(--ww3d-green), 0.2);
+}
+.border-ww3d-30 {
+  border-color: rgba(var(--ww3d-green), 0.3);
+}
+.focus-border-ww3d:focus {
+  border-color: rgb(var(--ww3d-green));
+  outline: none;
+}
+/* Page surface background tuned to the WW3D green palette (dark, neutral) */
+.bg-ww3d-surface {
+  background-color: rgb(10,18,15);
+}
+.text-ww3d-on-surface {
+  color: #e6efe9;
+}
+
+/* Header utilities */
+.header-ww3d { background-color: rgba(10,18,15,0.95); backdrop-filter: blur(6px); }
+.mobile-menu-ww3d { background-color: rgba(10,18,15,0.98); }
+
+/* Card and input surfaces tuned to WW3D palette */
+.card-ww3d {
+  background-color: rgb(17,30,25);
+  border-color: rgba(var(--ww3d-green-dark), 0.25);
+}
+.card-ww3d-2 {
+  background-color: rgb(21,34,29);
+  border-color: rgba(var(--ww3d-green-dark), 0.18);
+}
+.bg-ww3d-input {
+  background-color: rgb(22,32,28);
+  color: #e6efe9;
+}
+.card-ww3d:hover {
+  box-shadow: 0 8px 20px rgba(var(--ww3d-green-dark), 0.12);
+}
+.card-section-ww3d { background-color: rgb(12,22,18); }

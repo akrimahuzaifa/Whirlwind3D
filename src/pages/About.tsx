@@ -2,8 +2,8 @@ import * as Icons from 'lucide-react';
 
 export default function About() {
   return (
-    <div className="min-h-screen bg-slate-950">
-      <section className="bg-gradient-to-br from-slate-900 to-slate-800 py-20">
+    <div className="min-h-screen bg-ww3d-surface">
+      <section className="ww3d-gradient py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
@@ -48,9 +48,9 @@ export default function About() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
-            <div className="bg-slate-900 border border-slate-800 rounded-lg p-8">
-              <div className="w-12 h-12 bg-blue-600/10 rounded-lg flex items-center justify-center mb-4">
-                <Icons.Cpu className="w-6 h-6 text-blue-400" />
+            <div className="card-ww3d border border-ww3d-30 rounded-lg p-8">
+              <div className="w-12 h-12 icon-ww3d-bg rounded-lg flex items-center justify-center mb-4">
+                <Icons.Cpu className="w-6 h-6 text-ww3d" />
               </div>
               <h3 className="text-xl font-bold text-white mb-3">Embedded Systems Expertise</h3>
               <p className="text-gray-400 leading-relaxed">
@@ -58,9 +58,9 @@ export default function About() {
               </p>
             </div>
 
-            <div className="bg-slate-900 border border-slate-800 rounded-lg p-8">
-              <div className="w-12 h-12 bg-blue-600/10 rounded-lg flex items-center justify-center mb-4">
-                <Icons.Target className="w-6 h-6 text-blue-400" />
+            <div className="card-ww3d border border-ww3d-30 rounded-lg p-8">
+              <div className="w-12 h-12 icon-ww3d-bg rounded-lg flex items-center justify-center mb-4">
+                <Icons.Target className="w-6 h-6 text-ww3d" />
               </div>
               <h3 className="text-xl font-bold text-white mb-3">Commitment to Precision</h3>
               <p className="text-gray-400 leading-relaxed">
@@ -68,9 +68,9 @@ export default function About() {
               </p>
             </div>
 
-            <div className="bg-slate-900 border border-slate-800 rounded-lg p-8">
-              <div className="w-12 h-12 bg-blue-600/10 rounded-lg flex items-center justify-center mb-4">
-                <Icons.Shield className="w-6 h-6 text-blue-400" />
+            <div className="card-ww3d border border-ww3d-30 rounded-lg p-8">
+              <div className="w-12 h-12 icon-ww3d-bg rounded-lg flex items-center justify-center mb-4">
+                <Icons.Shield className="w-6 h-6 text-ww3d" />
               </div>
               <h3 className="text-xl font-bold text-white mb-3">Defense & Aerospace Experience</h3>
               <p className="text-gray-400 leading-relaxed">
@@ -79,7 +79,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className="bg-slate-900 border border-slate-800 rounded-lg p-12">
+            <div className="card-ww3d border border-ww3d-30 rounded-lg p-12">
             <h2 className="text-3xl font-bold text-white mb-6 text-center">
               Our Mission-Critical Environment
             </h2>
@@ -88,19 +88,19 @@ export default function About() {
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
               <div>
-                <div className="text-3xl font-bold text-blue-400 mb-2">25+</div>
+                <div className="text-3xl font-bold text-ww3d mb-2">25+</div>
                 <div className="text-gray-400 text-sm">Years Experience</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-blue-400 mb-2">100+</div>
+                <div className="text-3xl font-bold text-ww3d mb-2">100+</div>
                 <div className="text-gray-400 text-sm">Government Customers</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-blue-400 mb-2">1000+</div>
+                <div className="text-3xl font-bold text-ww3d mb-2">1000+</div>
                 <div className="text-gray-400 text-sm">Systems Deployed</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-blue-400 mb-2">99.9%</div>
+                <div className="text-3xl font-bold text-ww3d mb-2">99.9%</div>
                 <div className="text-gray-400 text-sm">Uptime Reliability</div>
               </div>
             </div>

@@ -5,7 +5,6 @@ import Home from './pages/Home';
 import Products from './pages/Products';
 import ProductDetail from './pages/ProductDetail';
 import About from './pages/About';
-import Industries from './pages/Industries';
 import Contact from './pages/Contact';
 
 function App() {
@@ -39,8 +38,6 @@ function App() {
         return <ProductDetail productId={productId} onNavigate={handleNavigate} />;
       case 'about':
         return <About />;
-      case 'industries':
-        return <Industries onNavigate={handleNavigate} />;
       case 'contact':
         return <Contact />;
       default:
@@ -49,7 +46,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-950">
+    <div className="min-h-screen bg-ww3d-surface">
       <Header currentPage={currentPage} onNavigate={handleNavigate} />
       <main>{renderPage()}</main>
       <Footer onNavigate={handleNavigate} />

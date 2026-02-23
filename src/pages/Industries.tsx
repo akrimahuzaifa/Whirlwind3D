@@ -81,8 +81,8 @@ export default function Industries({ onNavigate }: IndustriesProps) {
   ];
 
   return (
-    <div className="min-h-screen bg-slate-950">
-      <section className="bg-gradient-to-br from-slate-900 to-slate-800 py-20">
+    <div className="min-h-screen bg-ww3d-surface">
+      <section className="ww3d-gradient py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
@@ -97,7 +97,7 @@ export default function Industries({ onNavigate }: IndustriesProps) {
 
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-slate-900 border border-slate-800 rounded-lg p-8 mb-16">
+          <div className="card-ww3d border border-ww3d-30 rounded-lg p-8 mb-16">
             <div className="text-center max-w-4xl mx-auto">
               <h2 className="text-2xl font-bold text-white mb-4">
                 Specialized Engineering for Professional Simulation
@@ -115,12 +115,12 @@ export default function Industries({ onNavigate }: IndustriesProps) {
               return (
                 <div
                   key={index}
-                  className="bg-slate-900 border border-slate-800 rounded-lg p-8 hover:border-blue-500 transition-all duration-300"
+                  className="card-ww3d border border-ww3d-30 rounded-lg p-8 hover-border-ww3d transition-all duration-300"
                 >
                   <div className="flex items-start gap-6 mb-6">
                     <div className="flex-shrink-0">
-                      <div className="w-14 h-14 bg-blue-600/10 rounded-lg flex items-center justify-center">
-                        {IconComponent && <IconComponent className="w-7 h-7 text-blue-400" />}
+                      <div className="w-14 h-14 icon-ww3d-bg rounded-lg flex items-center justify-center">
+                        {IconComponent && <IconComponent className="w-7 h-7 text-ww3d" />}
                       </div>
                     </div>
                     <div>
@@ -136,7 +136,7 @@ export default function Industries({ onNavigate }: IndustriesProps) {
                     <ul className="space-y-2">
                       {industry.applications.map((application, appIndex) => (
                         <li key={appIndex} className="flex items-start gap-3">
-                          <Icons.ChevronRight className="w-4 h-4 text-blue-400 mt-1 flex-shrink-0" />
+                          <Icons.ChevronRight className="w-4 h-4 text-ww3d mt-1 flex-shrink-0" />
                           <span className="text-gray-400 text-sm">{application}</span>
                         </li>
                       ))}
@@ -147,7 +147,7 @@ export default function Industries({ onNavigate }: IndustriesProps) {
             })}
           </div>
 
-          <div className="mt-16 bg-gradient-to-br from-blue-900/20 to-slate-900 border border-blue-800/30 rounded-lg p-12 text-center">
+              <div className="mt-16 ww3d-gradient border border-ww3d-30 rounded-lg p-12 text-center">
             <h2 className="text-3xl font-bold text-white mb-4">
               Trusted by Industry Leaders
             </h2>
@@ -156,7 +156,7 @@ export default function Industries({ onNavigate }: IndustriesProps) {
             </p>
             <button
               onClick={() => onNavigate('contact')}
-              className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded transition-colors"
+                  className="px-8 py-4 btn-ww3d text-white font-semibold rounded transition-colors"
             >
               Discuss Your Requirements
             </button>
