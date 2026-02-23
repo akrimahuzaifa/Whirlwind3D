@@ -10,7 +10,13 @@ export default function Products({ onNavigate }: ProductsProps) {
     'ausim': '/AuSim_logo.png',
     'oth': '/OTH_logo.jpg',
     'sim-snr': '/logo_Sim_SNR.png',
-    'remo-3d': '/Remo_3D_logo.png'
+    'remo-3d': '/Remo_3D_logo.png',
+    // curated placeholders for products without supplied logos
+    'remoscape': 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=256&q=80',
+    'project-5': 'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=256&q=80',
+    'consulting': 'https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=256&q=80',
+    // placeholder for PTT.Link until client supplies logo
+    'ptt-link': 'https://via.placeholder.com/128x128.png?text=PTT.Link'
   };
   return (
     <div className="min-h-screen bg-ww3d-surface">

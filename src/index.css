@@ -2,11 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Import a clean sans font to match modern Hensoldt-like aesthetic */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+
 :root {
   --ww3d-green: 58, 88, 66;
   --ww3d-green-dark: 46, 72, 55;
   --ww3d-green-light: 100, 140, 120;
 }
+
+/* Global typography and spacing tweaks */
+html, body {
+  font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #dfeee3;
+}
+
+/* Headings tuned to be bolder, tighter, and more modern */
+h1 { font-weight: 800; letter-spacing: -0.02em; line-height: 1.05; color: #ffffff; }
+h2 { font-weight: 700; letter-spacing: -0.01em; color: #f3f7f2; }
+h3 { font-weight: 600; color: #eef6ec; }
+
+/* Lead paragraph for hero and intros */
+.ww3d-lead { color: #cfe7d6; font-size: 1.125rem; line-height: 1.6; }
+
+/* Subtle increased spacing for sections to breathe like Hensoldt pages */
+section { padding-top: 4.5rem; padding-bottom: 4.5rem; }
+
+/* Slightly increase heading sizes used across components to be more prominent */
+.text-4xl { font-size: 2.375rem; }
+.text-2xl { font-size: 1.5rem; }
+
+/* Improve button letter spacing and smoothness */
+.btn-ww3d, .btn-pill-ww3d, .btn-pill-ww3d-secondary { letter-spacing: 0.02em; }
 
 /* Whirlwind3D custom accent utilities */
 .ww3d-gradient {
